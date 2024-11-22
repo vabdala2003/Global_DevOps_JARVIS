@@ -55,6 +55,6 @@ public class ProdutoService {
         Produto produto = produtoRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Produto não encontrado com o ID: " + id));
         produtoRepository.delete(produto);
-        return true; // Produto deletado com sucesso
+        return true;
     }
 }

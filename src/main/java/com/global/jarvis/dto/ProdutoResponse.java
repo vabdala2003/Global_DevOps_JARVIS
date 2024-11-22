@@ -6,15 +6,14 @@ import java.math.BigDecimal;
 
 public class ProdutoResponse {
 
-    private Long idProduto; // Alterado para Long
-    private String nomeProduto; // Nome atualizado para corresponder ao modelo
-    private String categoria; // Nome atualizado para corresponder ao modelo
-    private BigDecimal preco; // Nome atualizado para corresponder ao modelo
-    private String status; // Nome atualizado para corresponder ao modelo
-    private String descricao; // Nome atualizado para corresponder ao modelo
-    private String tamanho; // Nome atualizado para corresponder ao modelo
+    private Long idProduto;
+    private String nomeProduto;
+    private String categoria;
+    private BigDecimal preco;
+    private String status;
+    private String descricao;
+    private String tamanho;
 
-    // Construtor que aceita um objeto Produto
     public ProdutoResponse(Produto produto) {
         this.idProduto = produto.getIdProduto();
         this.nomeProduto = produto.getNomeProduto();
@@ -25,7 +24,16 @@ public class ProdutoResponse {
         this.tamanho = produto.getTamanho();
     }
 
-    // Getters and Setters
+    public ProdutoResponse(Long idProduto, String nomeProduto, String categoria, BigDecimal preco, String status, String descricao, String tamanho) {
+        this.idProduto = idProduto;
+        this.nomeProduto = nomeProduto;
+        this.categoria = categoria;
+        this.preco = preco;
+        this.status = status;
+        this.descricao = descricao;
+        this.tamanho = tamanho;
+    }
+
     public Long getIdProduto() {
         return idProduto;
     }

@@ -22,12 +22,12 @@ GO
 PRODUTO
 http://localhost:8080/api/produtos
 {
-  "nomeProduto": "Smartphone X100",
-  "categoria": "Eletrônicos",
-  "preco": 1500.50,
+  "nomeProduto": "Casaco",
+  "categoria": "Vestuário",
+  "preco": 120.50,
   "status": "Disponível",
-  "descricao": "Smartphone com tela AMOLED de 6.5\" e 128GB de memória.",
-  "tamanho": "M"
+  "descricao": "Casaco Sweater Max",
+  "tamanho": "GG"
 }
 CLIENTE
 http://localhost:8080/api/clientes
@@ -52,11 +52,11 @@ http://localhost:8080/api/telefones
 PRODUTO
 http://localhost:8080/api/produtos/1
 {
-  "nomeProduto": "Smartphone X100 Pro",
-  "categoria": "Eletrônicos",
-  "preco": 1800.75,
-  "status": "Disponível",
-  "descricao": "Smartphone com tela AMOLED de 6.7\" e 256GB de memória.",
+  "nomeProduto": "Camiseta",
+  "categoria": "Vestuário",
+  "preco": 78.00,
+  "status": "Indisponível",
+  "descricao": "Camiseta estampa Oakley",
   "tamanho": "L"
 }
 CLIENTE
@@ -71,6 +71,7 @@ http://localhost:8080/api/clientes/1
 TELEFONE
 http://localhost:8080/api/telefones/1
 {
+  "idCliente": 1,	
   "numero": "11987654322",
   "ddd": "11",
   "descricao": "Comercial"
@@ -94,6 +95,10 @@ TELEFONE
 http://localhost:8080/api/telefones/1
 CLIENTE
 http://localhost:8080/api/clientes/1
+
+------------------------------------------------------------------- TEST
+
+./mvnw test
 
 
 

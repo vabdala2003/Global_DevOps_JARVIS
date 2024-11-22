@@ -52,12 +52,12 @@ public class ClienteService {
         Cliente cliente = clienteRepository.findById(idCliente)
                 .orElseThrow(() -> new EntityNotFoundException("Cliente não encontrado"));
         clienteRepository.delete(cliente);
-        return true; // Retorna true se o cliente foi deletado
+        return true;
     }
 
     public ClienteResponse obterCliente(Long idCliente) {
         Cliente cliente = clienteRepository.findById(idCliente)
                 .orElseThrow(() -> new EntityNotFoundException("Cliente não encontrado"));
-        return new ClienteResponse(cliente); // Retorna o ClienteResponse
+        return new ClienteResponse(cliente);
     }
 }

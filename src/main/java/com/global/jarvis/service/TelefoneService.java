@@ -28,7 +28,6 @@ public class TelefoneService {
     @Autowired
     private ClienteRepository clienteRepository;
 
-    // Método para listar todos os telefones
     public List<TelefoneResponse> listarTelefones() {
         logger.info("Listando todos os telefones...");
         List<Telefone> telefones = telefoneRepository.findAll();
@@ -37,7 +36,6 @@ public class TelefoneService {
                 .collect(Collectors.toList());
     }
 
-    // Método para cadastrar um novo telefone
     public TelefoneResponse cadastrarTelefone(TelefoneRequest telefoneRequest) {
         logger.info("Cadastrando um novo telefone para o cliente com ID: {}", telefoneRequest.getIdCliente());
 
@@ -56,7 +54,6 @@ public class TelefoneService {
         }
     }
 
-    // Método para atualizar um telefone existente
     @Transactional
     public TelefoneResponse atualizarTelefone(Long idTelefone, TelefoneRequest telefoneRequest) {
         logger.info("Atualizando telefone com ID: {}", idTelefone);
@@ -78,7 +75,6 @@ public class TelefoneService {
         }
     }
 
-    // Método para deletar um telefone pelo id
     public void deletarTelefone(Long idTelefone) {
         logger.info("Deletando telefone com ID: {}", idTelefone);
 
@@ -96,7 +92,6 @@ public class TelefoneService {
         }
     }
 
-    // Método para obter um telefone pelo id
     public TelefoneResponse obterTelefone(Long idTelefone) {
         logger.info("Buscando telefone com ID: {}", idTelefone);
 

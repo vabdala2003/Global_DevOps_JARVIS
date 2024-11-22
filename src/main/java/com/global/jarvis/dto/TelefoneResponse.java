@@ -6,13 +6,12 @@ import lombok.Data;
 @Data
 public class TelefoneResponse {
 
-    private Long idTelefone;  // ID do telefone
-    private Long idCliente;   // ID do cliente
-    private String nrTelefone; // Número de telefone
-    private String nrDdd;      // Código DDD
-    private String dsTelefone; // Descrição do telefone
+    private Long idTelefone;
+    private Long idCliente;
+    private String nrTelefone;
+    private String nrDdd;
+    private String dsTelefone;
 
-    // Construtor que converte um Telefone em TelefoneResponse
     public TelefoneResponse(Telefone telefone) {
         this.idTelefone = telefone.getIdTelefone();
         this.idCliente = telefone.getCliente() != null ? telefone.getCliente().getIdCliente() : null; // Previne NullPointerException

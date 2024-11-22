@@ -31,8 +31,7 @@ sqlcmd -S serverjarvis.database.windows.net -d Global_JARVIS_DB -U azureadmin -P
 Para checar o nome de todas as tabelas:
 
 ```bash
-SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE =
-'BASE TABLE';
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE';
 GO
 ```
 

@@ -15,14 +15,6 @@ TABLE_TYPE = 'BASE TABLE';
 
 GO
 
-------------------------------------------------
-
-
-az appservice plan create -n planJarvisApp --location brazilsouth -g Global_JARVIS_Group --sku F1 
-
-az webapp create -g Global_JARVIS_Group  -p planJarvisApp --runtime "JAVA:17" -n appjarvisglobal
-
-
 ---------------------- JSONs ---------------------
 
 -------------------- ( POST ) --------------------

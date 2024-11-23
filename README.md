@@ -1,6 +1,20 @@
 # Jarvis API Springboot em nuvem com Azure Pipelines 
 
+### obs: arquitetura do projeto no repositório
+
 ---
+
+## O que é esse projeto e o que alcançamos?
+JARVIS vem como uma solução para provar produtos de forma mais fácil em comércios de roupa. Utilizando de AI e Banco de dados como tecnologias principais, leva a facilidade aos usuários e maior
+rentabilidade para os comércios e nossa organização.
+
+Este projeto realiza todo o processo de automatização devops para o deploy de uma aplicação Springboot API. Obtivemos diversos benefícios desse sistema, pois além de agilizar os requerimentos 
+para um build e deploy, ensinou nosso time muito sobre a cultura ágil de DevOps.
+
+1. API feita com sucesso integrada a nuvem com Azure Server 
+2. CI organizado por tasks efetivas que geram o artefato
+3. CD Funcional que realiza o deploy diretamente na nuvem
+
 
 ## CI/CD Pipeline
 
